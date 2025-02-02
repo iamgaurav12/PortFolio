@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaurav</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.svg" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Gaurav</span> <br />Prakash From India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" alt="owner" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hi, I’m Gaurav Prakash, a passionate and driven Computer Science
+              and Engineering (CSE) student currently in my 3rd year at the
+              Chandigarh College of Engineering and Technology (CCET),
+              Chandigarh. With a strong foundation in programming,
+              problem-solving, and software development, I am constantly
+              exploring new technologies and honing my skills to build
+              innovative and impactful solutions. <br />
+              <br />
+              My academic journey has equipped me with expertise in programming
+              languages like C, C++, JavaScript, Python, HTML, and CSS, along
+              with hands-on experience in web development, data structures, and
+              algorithms. I am particularly passionate about Full Stack Web
+              Development and enjoy working on projects that challenge me to
+              think creatively, push boundaries, and deliver seamless user
+              experiences. <br />
+              <br />Beyond academics, I actively participate in coding
+              competitions, hackathons, and open-source contributions, which
+              have helped me develop a collaborative mindset and a knack for
+              tackling real-world problems. I thrive in dynamic environments, am
+              a quick learner, and am always eager to take on new challenges to
+              grow both personally and professionally. <br />
+              <br />I believe in the power of technology to transform ideas into
+              reality and am excited to leverage my skills to create meaningful
+              and innovative solutions. Let’s connect and build something
+              amazing together!
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Problem Solving Skills</span><br>Solved 150+ leetcode Problems</li>
+                    <li><span>Web Development</span><br>Full Stack Web Developer</li>
+                    <li><span>React Native Developer</span><br>Building Mobile Apps</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                <li><span>2025 FEB</span><br>Make MoveX Full Stack Web App</li>
+                <li><span>2024 JUN - 2024 JUL</span><br>A frontend Intern at NIELET Haridwar</li>
+                <li><span>2025 FEB</span><br>An AI chat Application</li>    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2026</span><br>Graduated From Panjab University</li>
+                    <li><span>2021</span><br>12th From Delhi Model Public School, Bihar</li>
+                    <li><span>2019</span><br>10th From DAV Public School, Bihar</li>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links")
+        let tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");    
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+  </body>
+</html>
