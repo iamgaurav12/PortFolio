@@ -5,6 +5,29 @@ Using HTML, CSS, JS
 ## Live 
  -> Paste Link here of the live hosting
 
+## How to Fork this Repository
+
+1. **Fork the Repository**:
+   - Click on the 'Fork' button at the top right corner of this repository page.
+   - This will create a copy of this repository in your GitHub account.
+
+2. **Clone the Forked Repository**:
+   - Open your terminal or command prompt.
+   - Run the following command to clone the repository to your local machine:
+     ```sh
+     git clone https://github.com/YOUR_USERNAME/portfolio.git
+     ```
+   - Replace `YOUR_USERNAME` with your GitHub username.
+
+3. **Navigate to the Project Directory**:
+   - Change into the project directory:
+     ```sh
+     cd portfolio
+     ```
+
+4. **Open the Project**:
+   - You can now open the project in your preferred code editor and start making changes.
+
 ## HTML Structure
 
 The HTML file is structured as follows:
