@@ -3,7 +3,7 @@
 Using HTML, CSS, JS
 
 ## Live 
- -> Paste Link here of the live hosting
+ -> [Open Portfolio](https://gauravprakashh.netlify.app/)
 
 ## How to Fork this Repository
 
